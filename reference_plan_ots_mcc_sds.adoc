@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: reference_plan_ots_mcc_sds.html 
+keywords: plan, planning, metrocluster, metrocluster sds 
+summary: 在规划 MetroCluster ONTAP Select 部署时，您应考虑多项要求。 
+---
+= 准备 MetroCluster SDS 部署
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在创建双节点 ONTAP Select 集群时， MetroCluster SDS 是一个配置选项。它与远程办公室/分支机构(ROBO)部署类似、但两个节点之间的距离最长可达10公里。这种增强型双节点部署提供了更多的使用情形。在准备部署 MetroCluster SDS 时，您应了解相关要求和限制。
+
+在部署MetroCluster SDS之前、请确认满足以下要求。
+
+.许可
+每个节点都必须具有高级或更高的 ONTAP Select 许可证。
+
+.虚拟机管理程序平台
+MetroCluster SDS 可以部署在 ROBO 环境中双节点集群所支持的同一 VMware ESXi 和 KVM 虚拟机管理程序上。
+
+[NOTE]
+====
+从ONTAP Select 9.14.1开始、已恢复对KVM虚拟机管理程序的支持。以前、ONTAP Select 9.10.1不再支持在KVM虚拟机管理程序上部署新集群、而ONTAP Select 9.11.1不再支持管理现有KVM集群和主机(脱机或删除除外)。
+
+====
+.网络配置：
+参与站点之间需要第 2 层连接。支持 10GbE 和 1GbE ，包括以下配置：
+
+* 1个10GbE
+* 4个1GbE
+
+
+
+NOTE: 提供数据的端口和互连端口必须连接到第一个交换机。
+
+.节点之间的延迟
+两个节点之间的网络必须支持 5 毫秒的平均延迟，并额外支持 5 毫秒的定期抖动。在部署集群之前、您必须使用一节中所述的过程测试网络link:concept_nw_concepts_chars.html["深度剖析网络"]。
+
+.调解器服务
+与所有双节点 ONTAP Select 集群一样， Deploy 虚拟机中也包含一个单独的调解器服务，用于监控节点并协助管理故障。借助 MetroCluster SDS 提供的增强距离，可在网络拓扑中创建三个不同的站点。调解器与节点之间的链路往返延迟应为 125 毫秒或更短。
+
+.存储
+使用HDD和SSD磁盘支持直连存储(DAS)。也支持vNAs、包括VMware环境中的外部存储阵列和vSAN。
+
+
+NOTE: 部署 MetroCluster SDS 时，不能在分布式或 " 延伸型 " 拓扑中使用 vSAN 。
+
+.分配给 Deploy 的静态 IP 地址
+您必须为 Deploy 管理实用程序分配一个静态 IP 地址。此要求适用场景 All Deploy 实例用于管理一个或多个 ONTAP Select 双节点集群。
