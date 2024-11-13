@@ -965,7 +965,6 @@
   <block id="614a7784cfcb44e896f7945455f42f95" category="paragraph">ONTAP Select 不支持多种 ONTAP 功能。在大多数情况下，这些功能需要特殊硬件，而虚拟化 ONTAP Select 环境中不提供这些硬件。</block>
   <block id="7259cd6e0f46eebf9079f25f465a8c63" category="list-text">自主勒索软件保护(ARP)</block>
   <block id="a847af8ec24fb4acb1f1194041f1508f" category="list-text">集群IP空间不支持对集群IP空间进行任何修改、包括添加或删除端口、虚拟LAN (VLAN)或链路聚合组。</block>
-  <block id="37730150d6378b2a0b04f20595d2d65a" category="list-text">ESXi 8.0 U3</block>
   <block id="e400270296a47b2c68bd6e799fac399d" category="list-text">不支持光纤通道光纤通道和以太网光纤通道。</block>
   <block id="4980ffa00c517c7cc63e35e9bb2badc8" category="list-text">运行状况监控在基于硬件的 ONTAP 部署中使用的传统运行状况监控功能特定于底层硬件组件。由于 ONTAP Select 使用的是虚拟化环境，因此运行状况监控器不处于活动状态。</block>
   <block id="f7ee707e6ddfc29288dbbbdf8cecd146" category="list-text">不支持接口组接口组。</block>
@@ -2080,7 +2079,6 @@
   <block id="f371e1e74365e433f105f30c886225bf" category="inline-link-macro">ONTAP Select 9.14.1发行说明</block>
   <block id="2dbcb54e47dfd070743afb26077cdc91" category="list-text">如果您运行的ONTAP Select Deploy 9.14.1版本低于9.14.1P2、则应尽快升级到ONTAP Select Deploy 9.14.1P2。有关详细信息，请参见<block ref="6635db952aa4480bb5bc591b4d6d32f6" category="inline-link-macro-rx"></block>。</block>
   <block id="aacb1ad8ec74092a13074108a4e20c02" category="list-text">增强了对VMware ESXi的支持</block>
-  <block id="78fb396e8c541b492002e6b94963fe83" category="list-text">ONTAP Select 9.14.1支持VMware ESXi 8.0.2。</block>
   <block id="1e2be71e8b4858c0b3e832cba35731d1" category="section-title">ONTAP Select 9.13.1.</block>
   <block id="cdbcb12eafeb6cc1f6a058e9c52a7f8d" category="paragraph">ONTAP Select 9.13.1提供了几项新功能和改进功能。</block>
   <block id="58c277c116ff23ffb9879debb95b4968" category="list-text">支持基于TCP的NVMe</block>
@@ -3418,10 +3416,6 @@
   <block id="412c286ae37ff7a40b56dd84c3bf196c" category="section-title">硬件和存储要求</block>
   <block id="c9dd95ac8795512f2d676118ba8def1a" category="paragraph">集群扩展和缩减功能受以下限制：</block>
   <block id="03a645906298706d76817495f4d8708a" category="list-text">仅支持在ESX虚拟机管理程序主机上创建的集群。以下ESX版本与ONTAP Select 9.15.1兼容：</block>
-  <block id="ec65581eeb2dfa95316cf6a00d2ff593" category="list-text">ESXi 8.0U2</block>
-  <block id="43629b681eab8f23e6624067ec8d1fde" category="list-text">ESXi 8.0U1</block>
-  <block id="200d1894c9fd6ae53ee1224b58c879d1" category="list-text">ESXi 8.0GA</block>
-  <block id="83796d186e6e678e53d65b677d9068ca" category="list-text">ESXi 7.0u3</block>
   <block id="ef179550c4eb9da6a82350b32d807ed9" category="list-text">ESXi 7.0</block>
   <block id="2b2045e987020e440e1d72497530fdf6" category="list-text">只能从六节点集群扩展为八节点集群。</block>
   <block id="39503511d67e0af8ddd6049c24f164f7" category="list-text">只能从八节点集群缩减为六节点集群。</block>
@@ -3724,4 +3718,11 @@
   <block id="1c5ffa58ac07641f5cec5616c07b2ba2" category="sidebar">添加 ONTAP Select 映像</block>
   <block id="0a15f7ba73868a32304fdf52855463c9" category="sidebar">删除 ONTAP Select 映像</block>
   <block id="afc9d68a1be701598b5ef94dc0be2844" category="sidebar">恢复双节点集群的 Deploy</block>
+  <block id="b374e4bbc5d3bd65f35605cc784ed685" category="list-text">ONTAP Select 9.14.1支持VMware ESXi 8.0 U2。</block>
+  <block id="5add73dc063e8420f47ce30e8a544f34" category="list-text">VMware ESXi 8.0 U3 (适用于ONTAP 9 15.1P4或更高版本的修补程序)</block>
+  <block id="03c073298ba0e42c4beebe1f4a065d90" category="list-text">ESXi 8.0 U3 (适用于ONTAP 9。15.1P4或更高版本的修补程序)</block>
+  <block id="3a13e6fcb6840db51e3e181c41dff37b" category="list-text">ESXi 8.0 U2</block>
+  <block id="084ef93eebe5fd52d657e556b4305619" category="list-text">ESXi 8.0 U1</block>
+  <block id="4ec8056f2f2bfb0ffa0104fc43edb1da" category="list-text">ESXi 8.0GA</block>
+  <block id="8d224631a5a87c64caecc71fee6fb612" category="list-text">ESXi 7.0 U3</block>
 </blocks>

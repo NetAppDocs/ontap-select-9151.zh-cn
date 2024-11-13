@@ -42,6 +42,7 @@ ONTAP Select 可以部署在以下虚拟机管理程序上：
 * VMware ESXi 7.0 GA (内部版本15843807或更高版本)、包括7.0 U1、U2和U3C
 * VMware ESXi 8.0 GA (内部版本20513097)
 * VMware ESXi 8.0 U1 (内部版本21495797)
+* VMware ESXi 8.0 U3 (适用于ONTAP 9 15.1P4或更高版本的修补程序)
 
 
 
