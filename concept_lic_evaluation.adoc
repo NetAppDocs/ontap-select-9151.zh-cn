@@ -16,6 +16,15 @@ summary: 如果您要在决定购买之前评估 ONTAP Select ，可以使用评
 [role="lead"]
 如果您要在决定购买之前评估 ONTAP Select ，可以使用评估版许可证。评估版许可证随 ONTAP Select Deploy 管理实用程序一起提供，并在评估版部署中自动应用于每个 ONTAP Select 节点。
 
+[NOTE]
+====
+要下载ONTAP Select Deploy管理实用程序、您需要满足以下要求：
+
+* 已注册的NetApp支持站点帐户。如果您没有帐户，请参见 https://mysupport.netapp.com/site/user/registration["用户注册"^]。
+*  https://mysupport.netapp.com/site/downloads/evaluation/ontap-select["接受最终用户许可协议"^]对于具有评估版许可证的ONTAP Select部署、为。
+
+
+====
 
 
 == 许可特征
