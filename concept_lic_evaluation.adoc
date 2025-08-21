@@ -52,3 +52,7 @@ ONTAP Select 评估版许可证具有以下特征：
 
 
 有关详细信息、请参见 link:task_adm_licenses.html["将评估版许可证转换为生产许可证"] 。
+
+.相关信息
+* link:concept_lic_production.html["了解生产部署的许可证"]
+

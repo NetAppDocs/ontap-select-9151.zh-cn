@@ -3373,19 +3373,12 @@
   <block id="c94bc3200f704807c4c41ce4c2e2b2d8" category="paragraph">您必须对 ONTAP Select 集群中使用的每个主机执行升级操作步骤 。</block>
   <block id="e35a91dc5473bf4a53204a2bd1366d7e" category="summary">从ONTAP Select 9.15.1开始、您可以将现有集群的节点数从6个增加到8个、并将集群大小从8个节点减少到6个节点。</block>
   <block id="c5f80e69da9019e045ae59cca1c9ae22" category="doc">扩展或缩减集群</block>
-  <block id="d6746c8c49fd9df73bbb168197689da8" category="paragraph">从ONTAP Select 9.15.1开始、您可以将现有集群的节点数从6个增加到8个、并将集群大小从8个节点减少到6个节点。不支持其他集群扩展或缩减方案。</block>
-  <block id="f6ad6d358dd65a1da361069309b57e39" category="paragraph">操作步骤可使用命令行界面、API或Web界面从ONTAP Select Deploy启动。</block>
   <block id="412c286ae37ff7a40b56dd84c3bf196c" category="section-title">硬件和存储要求</block>
   <block id="c9dd95ac8795512f2d676118ba8def1a" category="paragraph">集群扩展和缩减功能受以下限制：</block>
-  <block id="03a645906298706d76817495f4d8708a" category="list-text">仅支持在ESX虚拟机管理程序主机上创建的集群。以下ESX版本与ONTAP Select 9.15.1兼容：</block>
   <block id="ef179550c4eb9da6a82350b32d807ed9" category="list-text">ESXi 7.0</block>
-  <block id="2b2045e987020e440e1d72497530fdf6" category="list-text">只能从六节点集群扩展为八节点集群。</block>
-  <block id="39503511d67e0af8ddd6049c24f164f7" category="list-text">只能从八节点集群缩减为六节点集群。</block>
   <block id="c0fa4ded01a6d24b2a77cd3a6b10e6e7" category="section-title">展开集群</block>
   <block id="c117993f1e48f58c366f6fe0873d958b" category="paragraph">您可以通过集群扩展功能将现有集群的大小从六节点集群增加到八节点集群。</block>
   <block id="679ac2592315c6e7c7320336fcda4a9c" category="paragraph">在准备集群扩展操作步骤时、会向清单中添加新的ESX主机、并分配新节点的详细信息。在开始集群扩展过程之前、网络预检会验证选定的内部网络。</block>
-  <block id="7c96df80e019ac7201d76d07cb2c8c3b" category="inline-link-macro">网络连接检查程序</block>
-  <block id="4ae4de42a8fcf95f1eb770acae4690f2" category="list-text">部署多节点集群时，您应熟悉<block ref="db3262d1c88b720b4d17a260091e6a75" category="inline-link-macro-rx"></block>。</block>
   <block id="30230ebf7e780c11cfcde8274fc17934" category="list-text">验证您是否知道新节点的许可证详细信息。</block>
   <block id="70be200347cc17e3939c72792fe71b15" category="list-text">选择页面顶部的*Cluster*选项卡，然后从列表中选择所需的集群。</block>
   <block id="83d473b2e8f1c324b60e13d720cac51a" category="list-text">在集群详细信息页面上、选择页面右侧的齿轮图标、然后选择*扩展集群*。</block>
@@ -3680,7 +3673,6 @@
   <block id="afc9d68a1be701598b5ef94dc0be2844" category="sidebar">恢复双节点集群的 Deploy</block>
   <block id="b374e4bbc5d3bd65f35605cc784ed685" category="list-text">ONTAP Select 9.14.1支持VMware ESXi 8.0 U2。</block>
   <block id="5add73dc063e8420f47ce30e8a544f34" category="list-text">VMware ESXi 8.0 U3 (适用于ONTAP 9 15.1P4或更高版本的修补程序)</block>
-  <block id="03c073298ba0e42c4beebe1f4a065d90" category="list-text">ESXi 8.0 U3 (适用于ONTAP 9。15.1P4或更高版本的修补程序)</block>
   <block id="3a13e6fcb6840db51e3e181c41dff37b" category="list-text">ESXi 8.0 U2</block>
   <block id="084ef93eebe5fd52d657e556b4305619" category="list-text">ESXi 8.0 U1</block>
   <block id="4ec8056f2f2bfb0ffa0104fc43edb1da" category="list-text">ESXi 8.0GA</block>
@@ -3705,4 +3697,17 @@
   <block id="e0d52f0658828de62020550252885d55" category="admonition">数据SVM不会在ONTAP Select集群部署中创建。它们必须由集群管理员在部署后创建。有关详细信息，请参见<block ref="35df8afad8b7a7c75a74b08ae370be2a" category="inline-link-rx"></block>。</block>
   <block id="c472d49cae1aabcbf09d7e5fe0e34c87" category="inline-link-macro">集群中包含的SVM类型</block>
   <block id="2e6bba9624b33764642b52b2cab65274" category="list-text"><block ref="2e6bba9624b33764642b52b2cab65274" category="inline-link-macro-rx"></block></block>
+  <block id="82f452184fa717ab2fcdbde25eea3a2b" category="inline-link-macro">了解生产部署的许可证</block>
+  <block id="74d4caeb059278dbd1c813ff422126a8" category="list-text"><block ref="74d4caeb059278dbd1c813ff422126a8" category="inline-link-macro-rx"></block></block>
+  <block id="3e7c1c2f4ff8e34c82dbce131bf96f39" category="paragraph">不支持以下集群扩展和收缩：</block>
+  <block id="399ac94f70d77c6189cd7c4808326bdd" category="list-text">从一个、两个或四个节点集群扩展至六个或八个节点集群。</block>
+  <block id="226d8636aca6bd1bdcac58203b8ddcd2" category="list-text">从六节点或八节点集群收缩为一节点、二节点或四节点集群。</block>
+  <block id="91af5705f16502125e8b2187e64202c0" category="inline-link-macro">命令行界面</block>
+  <block id="deb20e04b6a7cd797c67d023a7919cc9" category="inline-link-macro">网页用户界面</block>
+  <block id="a1f41e52e9ddbd9f87ecd032c237b1c0" category="inline-link-macro">SnapMirror 复制</block>
+  <block id="479ae5866a20368120075c3c81487a72" category="paragraph">要将集群中的节点数更改为集群扩展或收缩不支持的大小，您需要执行以下任务：。使用<block ref="e244d19d71425b6ce1016edcf4f160e2" category="inline-link-macro-rx"></block>或<block ref="e7b95b44ed2cf30f5122b04d3c4d28be" category="inline-link-macro-rx"></block>随ONTAP Select Deploy 管理实用程序一起提供。。如果适用，使用以下方式将数据迁移到新集群<block ref="968561cde231c01bbf82ff0390d26f84" category="inline-link-macro-rx"></block> 。</block>
+  <block id="c630ce0380a19f100f797f38c49d39bd" category="paragraph">您可以使用 CLI、API 或 Web 界面从ONTAP Select Deploy 启动集群扩展和收缩过程。</block>
+  <block id="e6bf3ba5fe1006a55faeef44787ee469" category="list-text">仅支持在 ESX 虚拟机管理程序主机上创建的集群。以下 ESX 版本与ONTAP Select 9.15.1 及更高版本兼容：</block>
+  <block id="37730150d6378b2a0b04f20595d2d65a" category="list-text">ESXi 8.0 U3</block>
+  <block id="6f32bc87686311f97a78df38edf22268" category="list-text">部署多节点集群时，您应该熟悉网络连接检查器。您可以使用<block ref="8b785c8234405c591fd2ca6b43d87925" category="inline-link-macro-rx"></block>或<block ref="d445e69ec86af9bb8b6f10e8a87603f1" category="inline-link-macro-rx"></block> 。</block>
 </blocks>
