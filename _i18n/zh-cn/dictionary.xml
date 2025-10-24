@@ -1911,7 +1911,6 @@
   <block id="b622687ba14734f3e63b4781b7e16324" category="paragraph-title">四节点，六节点或八节点集群与双节点 ONTAP Select 集群有何区别？</block>
   <block id="81cd6c8ef1512058861a9e8233376fb2" category="paragraph">与主要使用ONTAP Select Deploy VM创建集群的四节点、六节点和八节点集群不同、双节点集群持续依赖ONTAP Select Deploy VM进行HA仲裁。如果ONTAP Select Deploy虚拟机不可用、则故障转移服务将被禁用。</block>
   <block id="22d02cab0c9108f9f86736e68a4be2de" category="paragraph-title">什么是 MetroCluster SDS ？</block>
-  <block id="a6bd8e6869506e1e1f9d1c161d200e90" category="paragraph">MetroCluster SDS 是一种成本较低的同步复制选项，属于 NetApp 的 MetroCluster 业务连续性解决方案类别。与 NetApp MetroCluster 在 FAS 混合闪存， AFF ，适用于云的 NetApp 私有存储和 NetApp FlexArray ® 技术上推出的 NetApp 不同，它仅适用于 ONTAP Select 。</block>
   <block id="5c13f1d93ecc5cc8fc37b87a8fedb3b7" category="paragraph-title">MetroCluster SDS 与 NetApp MetroCluster 有何不同？</block>
   <block id="f782a001664af23a9a479ac7f8af14db" category="paragraph">MetroCluster SDS 提供了同步复制解决方案 ，并属于 NetApp MetroCluster 解决方案的范畴。但是，主要区别在于支持的距离（~10 公里与 300 公里）和连接类型（仅支持 IP 网络，而不是 FC 和 IP ）。</block>
   <block id="1092371194caad84c750464b682a97f5" category="paragraph-title">双节点 ONTAP Select 集群与双节点 ONTAP MetroCluster SDS 有何区别？</block>
@@ -3710,4 +3709,5 @@
   <block id="e6bf3ba5fe1006a55faeef44787ee469" category="list-text">仅支持在 ESX 虚拟机管理程序主机上创建的集群。以下 ESX 版本与ONTAP Select 9.15.1 及更高版本兼容：</block>
   <block id="37730150d6378b2a0b04f20595d2d65a" category="list-text">ESXi 8.0 U3</block>
   <block id="6f32bc87686311f97a78df38edf22268" category="list-text">部署多节点集群时，您应该熟悉网络连接检查器。您可以使用<block ref="8b785c8234405c591fd2ca6b43d87925" category="inline-link-macro-rx"></block>或<block ref="d445e69ec86af9bb8b6f10e8a87603f1" category="inline-link-macro-rx"></block> 。</block>
+  <block id="d099d0357fc4b6bd5f674bf948ccd8ef" category="paragraph">MetroCluster SDS 是一种低成本的同步复制选项，属于NetApp的MetroCluster业务连续性解决方案类别。它仅适用于ONTAP Select，而NetApp MetroCluster则适用于FAS混合闪存、 AFF和NetApp Private Storage for Cloud。</block>
 </blocks>
