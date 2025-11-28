@@ -97,6 +97,7 @@ ONTAP Select 不支持多种 ONTAP 功能。在大多数情况下，这些功能
 * 服务处理器
 * SVM 迁移
 * SnapLock Compliance
+* SnapMirror主动同步
 * VMware HCX
 
 
