@@ -439,7 +439,6 @@
   <block id="8ddd4ae6565aad8e0220721a3b0b115f" category="paragraph">License Manager 的每个实例以及相应的每个 Deploy 实用程序实例都使用一个唯一的 128 位编号进行标识。此数量与九位数的容量池许可证序列号相结合，可将池锁定到特定的 License Manager 实例（实际上是一个 Deploy 实例）。在生成 NetApp 许可证文件 (NLF) 过程中，您必须在 NetApp 支持站点上提供这两个值。</block>
   <block id="c35b911ba82c4e39b4517e38d1a88551" category="paragraph">您可以通过以下方式使用 Web 用户界面确定 Deploy 实例的许可证锁定 ID ：</block>
   <block id="93147ad40002fa287e2077d09284c452" category="list-text">开始使用页面首次登录到 Deploy 时，将显示此页面。您也可以通过单击页面右上角的下拉框并选择 Getting Started 来显示此页面。LLID 将显示在 Add Licenses 部分中。</block>
-  <block id="f51e8d01c52b31dc2ac35fcbc93eca28" category="list-text">管理单击页面顶部的 * 管理 * 选项卡 A ，然后单击 * 系统 * 和 * 设置 * 。</block>
   <block id="bc165811908b5de0b53e3fb455b59f7d" category="section-title">基本租赁操作</block>
   <block id="e02846e806da1a115348e9fee40e2ff8" category="paragraph">每次创建，扩展或更改数据聚合时， ONTAP Select 节点都必须找到或请求有效的容量租约。可以使用从先前请求中获取但仍然有效的租约，也可以根据需要请求新租约。ONTAP Select 节点会执行以下步骤来查找容量池租约：</block>
   <block id="7d9520f0fa2db8b35655f9495b62e220" category="list-text">如果节点上存在现有租约，则只要符合以下所有条件，就会使用此租约：</block>
@@ -3711,4 +3710,5 @@
   <block id="25775c61c3281e6d412f48371102d8b3" category="section-title">Sign in 到部署 Web 界面</block>
   <block id="887ee30caedf2bee91979565f5ddf01e" category="paragraph">您应登录到 Web 用户界面，以确认部署实用程序可用并执行初始配置。</block>
   <block id="ccbbd15600c60abef8f9d734d84b4a4e" category="paragraph"><block ref="ccbbd15600c60abef8f9d734d84b4a4e" category="inline-link-macro-rx"></block></block>
+  <block id="f3e8670f212f7476d09305c9b4820b8c" category="list-text">管理 单击页面顶部的 *管理* 选项卡，然后单击 *系统和 AutoSupport*。</block>
 </blocks>
