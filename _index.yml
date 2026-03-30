@@ -1,5 +1,12 @@
 ---
 indexpage:
+  title: ONTAP Select 9.15.1.
+  summary: NetApp ONTAP Select是一款软件定义的存储设备、您可以部署在运行VMware ESXi或基于内核的虚拟机(Kerner-Based
+    Virtual Machine、KVM)虚拟机管理程序的各种商用硬件服务器上。它可以为您提供构建灵活且可扩展的私有云基础架构所需的灵活性。此站点包含ONTAP
+    Select 9.15.1.的文档。
+  keywords: ontap select, 9151, concept, reference, task, documentation, release notes,
+    install, deploy, upgrading, workflow, migrate, security, admin, operation, compare,
+    production, platforms
   lead: NetApp ONTAP Select是一款软件定义的存储设备、您可以部署在运行VMware ESXi或基于内核的虚拟机(Kerner-Based
     Virtual Machine、KVM)虚拟机管理程序的各种商用硬件服务器上。它可以为您提供构建灵活且可扩展的私有云基础架构所需的灵活性。此站点包含ONTAP
     Select 9.15.1.的文档。
